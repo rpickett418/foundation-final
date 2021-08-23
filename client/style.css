@@ -75,7 +75,7 @@ h2 {
 
 .collectBy {
     height:500px;
-    display: block;
+    /* display: block; */
 }
 
 .players-gear {
@@ -107,10 +107,17 @@ h2 {
 }
 
 .hat-profile-pic {
-    height: 600px;
-    display: inline-block;
-    flex-wrap: wrap;
+    height: 400px;
+    display: inline;
     flex-direction: row;
     justify-content: space-around;
     padding: 60px;
+}
+
+.hatname {
+    font-size: 20px;
+}
+
+.price {
+    font-size: 20px;
 }
