@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0,
+}
+/* colors
+#023047 (dark blue)
+#ced4da (grey) */
+body {
+    background-color: #023047;
+}
+header {
+    color: white;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #ced4da ;
+    height: 80px;
+    padding: 40px;
+}
+
+.bucksgear{
+    color:#ced4da;
+    font-size: 40px;
+
+}
+
+h2 {
+    color:whitesmoke;
+    font-size: 20px;
+    
+}
+
+.promo {
+    color: whitesmoke;
+    background-image: url(https://i.pinimg.com/originals/ed/a7/ee/eda7ee2347f065d82c9d1d89ae6328e4.jpg);
+    background-repeat: no-repeat;
+    height: 150px;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.promoOne:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: #fca311;
+    text-decoration: underline;
+}
+
+.shopNowCard {
+    height: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    
+}
+
+.playerSection {
+    height: 10px
+}
+
+.jerseyBy {
+    height:500px
+}
+
+.shirtBy {
+    height: 500px;
+}
+
+.hatBy {
+    height: 500px
+}
+
+.collectBy {
+    height:500px;
+    display: block;
+}
+
+.players-gear {
+    display: inline;
+}
+
+#donImg {
+    height: 300px;
+}
+
+#bronImg {
+    height: 300px;
+}
+
+#stephImg {
+    height: 300px;
+}
+
+#kdImg {
+    height: 300px;
+}
+
+#giannisImg {
+    height: 300px;
+}
+
+#shaqImg {
+    height:300px;
+}
+
+.hat-profile-pic {
+    height: 600px;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px;
+}
