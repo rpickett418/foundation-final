@@ -166,13 +166,24 @@ button {
 #donImg {
     height: 350px;
 }
+#donImg:hover {
+    height: 650px;
+}
+
+
 #bronImg {
     height: 350px;
     width: 450px;
 }
+#bronImg:hover {
+    height: 650px;
+    width: 750px;
+}
+
 #stephImg {
     height: 250px;
 }
+
 #kdImg {
     height: 250px;
 }
@@ -182,6 +193,7 @@ button {
 #shaqImg {
     height: 250px;
 }
+
 
 
 .container, .products-container {
