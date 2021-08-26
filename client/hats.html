@@ -4,83 +4,94 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
+     
      <title>Basketball Works Hats</title>
  </head>
  <body>
     <header>
-        
         <div id="header"></div>
-        <div class="logo">
-            <img src=""><p></p>    
-        </div>
-        
         <nav class="header-nav">
-            <a href="./index.html">HOME</a>
-            <a href="">SHOP BY JERSEY</a>
-            <a href="">DEPARTMENT
-             <!-- <div id="myDropdown" class="dropdown-content">
-                    <a href="#men">Men</a>
-                    <a href="#women">Women</a>
-                    <a href="#kids">Kids</a>
-                    </div> --> 
-                      <!--checkbox Hide onclick   -->
-            </a>
+            <ul>
+                <li>
+                    <a href="./index.html">HOME</a>
+                </li>
                 
-            <a href="">JERSEY</a>
-            <a href="./hats.html">HATS</a>
-            <a href="">OTHERS</a>
-            <a href="">SALES</a>
-        </nav>
-        <!-- This should be a link on the mainpage to click on as well see how many items you have in your cart -->
-        <section class="shopping-cart" href="">
-            <p>
-                <span id="shopcart-count">0</span>
-            </p>
-        </section>    
+                <li>
+                    <a href="">SHOP BY JERSEY</a>
+                </li>
+
+                <li>
+                    <a href="">DEPARTMENT</a>
+                </li>
+
+                <li>
+                    <a href="">JERSEY</a>
+                </li>
+
+                <li>
+                    <a href="./hats.html">HATS</a>
+                </li>
+
+                <li>
+                    <a href="">SALES</a>
+                </li>
+                
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span id="shopcart-count">0</span>
+                    </a>  
+                </li>
+            </ul>
+        </nav>   
     </header>
         <section class="promo" >Hats on SALE 
         <section class="promoOne" href="">use promo code: SKULLSWAG</section>
-    
-        <div class="hat-card">
-            <img class="hat-profile-pic"
-            src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4226000/ff_4226482-56b0f1d893f3f70b8feb_full.jpg&w=340"/>
-            <p class="hatname">Utah Jazz</p>
-            <p class="price">$35.99</p>
-            <button class="shopcart-count" id="jazzHatBtn">Cart Item</button>
+            <!-- HAT 1 -->
+        <div class="container">
+            <div class="image">
+            <img src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4226000/ff_4226482-56b0f1d893f3f70b8feb_full.jpg&w=340" alt="hat1">
+            <h3>Utah Jazz</h3>
+            <h3>$34</h3>
+            <a class="add-cart cart1" href="#">Add Cart</a>
         </div>
-
-        <div class="hat-card">
-            <img class="hat-profile-pic"
-            src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4393000/ff_4393867-17c36f66be4c81f228d5_full.jpg&w=340"/>
-            <p class="hatname">Milwaukee Bucks</p>
-            <p class="price">$35.99</p>
-            <button class="shopcart-count" id="milHatBtn">Cart Item</button>
+        <!-- Hat 2 -->
+        <div class="container">
+            <div class="image">
+            <img src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4393000/ff_4393867-17c36f66be4c81f228d5_full.jpg&w=340" alt="hat2">
+            <h3>Milwaukee Bucks</h3>
+            <h3>$45</h3>
+            <a class="add-cart cart2" href="#">Add Cart</a>
         </div>
-
-        <div class="hat-card">
-            <img class="hat-profile-pic"
-            src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_3984000/ff_3984634-bfe5d9c54f26e256323c_full.jpg&w=340"/>
-            <p class="hatname">Houston Rockets</p>
-            <p class="price">$35.99</p>
-            <button class="shopcart-count" id="rockHatBtn">Cart Item</button>
+        <!-- Hat 3 -->
+        <div class="container">
+            <div class="image">
+            <img src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_3984000/ff_3984634-bfe5d9c54f26e256323c_full.jpg&w=340" alt="hat3">
+            <h3>Houston Rockets</h3>
+            <h3>$35</h3>
+            <a class="add-cart cart3" href="#">Add Cart</a>
         </div>
-
-        <div class="hat-card">
-            <img class="hat-profile-pic"
-            src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4368000/ff_4368741-bed34a8b01cd0a736823_full.jpg&w=340"/>
-            <p class="hatname">New York Knicks</p>
-            <p class="price">$35.99</p>
-            <button class="shopcart-count" id="nyHatBtn">Cart Item</button>
+        <!-- Hat 4 -->
+        <div class="container">
+            <div class="image">
+            <img src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4368000/ff_4368741-bed34a8b01cd0a736823_full.jpg&w=340" alt="hat4">
+            <h3>New York Knicks</h3>
+            <h3>$35</h3>
+            <a class="add-cart cart4" href="#">Add Cart</a>
         </div>
-
-        <div class="hat-card">
-            <img class="hat-profile-pic"
-            src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_3492000/ff_3492339-bfad3aeb6b6962e4abd9_full.jpg&w=340"/>
-            <p class="hatname">Denver Nuggets</p>
-            <p class="price">$35.99</p>
-            <button class="shopcart-count" id="nughatBtn">Cart Item</button>
+        <!-- Hat 5 -->
+        <div class="container">
+            <div class="image">
+            <img src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_3492000/ff_3492339-bfad3aeb6b6962e4abd9_full.jpg&w=340" alt="hat5">
+            <h3>Denver Nuggets</h3>
+            <h3>$35</h3>
+            <a class="add-cart cart5" href="#">Add Cart</a>
         </div>
-        <script src="index.js"></script>
+    <script src="main.js" async></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
  </body>
  </html>

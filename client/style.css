@@ -1,6 +1,8 @@
 * {
     padding: 0;
-    margin: 0,
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Nunito', sans-serif;
 }
 /* colors
 #023047 (dark blue)
@@ -21,16 +23,68 @@ header {
     padding: 40px;
 }
 
+nav {
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+  
+}
+nav li {
+    list-style: none;
+    display:inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;;
+}
+.cart a {
+    background-color:royalblue ;
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .bucksgear{
     color:#ced4da;
     font-size: 40px;
 
 }
 
+.milly {
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
+    justify-content: center;
+    margin-left: 500px;
+}
+
 h2 {
     color:whitesmoke;
-    font-size: 20px;
-    
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .promo {
@@ -39,7 +93,8 @@ h2 {
     background-repeat: no-repeat;
     height: 150px;
     font-size: 50px;
-    justify-content: center;
+    position: relative;
+    margin: 100px;
 }
 
 .promoOne:hover {
@@ -50,10 +105,28 @@ h2 {
     text-decoration: underline;
 }
 
+#shopByPlayer {
+    display:flex ;
+    justify-content: center;
+    padding: 40px;
+}
+
+#donBtn {
+    transition: 12s;
+}
+
+#shopByPlayer {
+    font-family: 'Nunito', sans-serif;
+    text-decoration: underline;
+
+}
+
 .shopNowCard {
-    height: 20px;
+    height: 10px;
     display: inline-block;
     flex-wrap: wrap;
+    margin-right: 10px;
+    padding: 5px;
     
 }
 
@@ -62,62 +135,161 @@ h2 {
 }
 
 .jerseyBy {
-    height:500px
+    height:400px;
+    width:450px;
 }
 
 .shirtBy {
-    height: 500px;
+    height: 400px;
+    width: 350px;
 }
 
 .hatBy {
-    height: 500px
+    height: 400px;
+    width: 430px;
 }
 
 .collectBy {
-    height:500px;
+    height:400px;
+    width:360px;
     /* display: block; */
 }
 
 .players-gear {
-    display: inline;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
 }
 
 #donImg {
-    height: 300px;
+    height: 350px;
 }
-
 #bronImg {
-    height: 300px;
+    height: 350px;
+    width: 450px;
 }
-
 #stephImg {
-    height: 300px;
+    height: 250px;
 }
-
 #kdImg {
-    height: 300px;
+    height: 250px;
 }
-
 #giannisImg {
-    height: 300px;
+    height: 250px;
 }
-
 #shaqImg {
-    height:300px;
+    height: 250px;
 }
 
-.hat-profile-pic {
-    height: 400px;
-    display: inline;
-    flex-direction: row;
+
+.container, .products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: nowrap;
+}
+
+.image {
+    /* margin-right: 20px;
+    margin-left: 20px; */
+    position: relative;
+    display: flex;
     justify-content: space-around;
-    padding: 60px;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+.add-cart {
+    position:absolute;
+    width: 100%;
+    background-color: #ffb703;
+    transition: all 0.6s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+
 }
 
-.hatname {
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5 {
+    bottom:  20px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+h3 {
     font-size: 20px;
+}
+/* CART PAGE */
+
+.products-container {
+    max-width: 650px; 
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+
+.product-header {
+    width:100%; 
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width:45%;
 }
 
 .price {
-    font-size: 20px;
+    width: 15%;
+    
+    display: flex;
+    align-items: center;
 }
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+
+}
+
+.product {
+    width: 45%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.quantity {
+    width:30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+footer {
+    background-color: #2A97A8;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    font-size:20px;
+    margin-top:1200px;
+    margin-bottom:100px;
+  }

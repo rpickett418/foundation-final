@@ -11,35 +11,47 @@
     <header>
         
         <div id="header"></div>
-        <div class="logo">
-            <img src=""><p></p>    
-        </div>
-        
+
         <nav class="header-nav">
-            <a href="./index.html">HOME</a>
-            <a href="">SHOP BY JERSEY</a>
-            <a href="">DEPARTMENT
-             <!-- <div id="myDropdown" class="dropdown-content">
-                    <a href="#men">Men</a>
-                    <a href="#women">Women</a>
-                    <a href="#kids">Kids</a>
-                    </div> --> 
-                      <!--checkbox Hide onclick   -->
-            </a>
+            <ul>
+                <li>
+                    <a href="./index.html">HOME</a>
+                </li>
                 
-            <a href="">JERSEY</a>
-            <a href="./hats.html">HATS</a>
-            <a href="">OTHERS</a>
-            <a href="">SALES</a>
-        </nav>
-        <!-- This should be a link on the mainpage to click on as well see how many items you have in your cart -->
-        <section class="shopping-cart" href="">
-            <p>
-                <span id="shopcart-count">0</span>
-            </p>
+                <li>
+                    <a href="">SHOP BY JERSEY</a>
+                </li>
 
+                <li>
+                    <a href="">DEPARTMENT</a>
+                </li>
 
-        </section>    
+                <li>
+                    <a href="">JERSEY</a>
+                </li>
+
+                <li>
+                    <a href="./hats.html">HATS</a>
+                </li>
+
+                <li>
+                    <a href="">SALES</a>
+                </li>
+               
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span id="shopcart-count">0</span>
+                    </a>  
+                </li>
+
+                <li>
+                    <form>
+                       <input type="text"> 
+                    </form>
+                     
+                </li>
+            </ul>
+        </nav>   
     </header>
         <section class="promo" >Hats on SALE 
         <section class="promoOne" href="">use promo code: SKULLSWAG</section>
@@ -50,35 +62,39 @@
         <!-- FEATURED GEAR CHAMPIONSHIP APPEARAL -->
         <section class="feat-gear">
             <div class="milw-card">
-                 <h2 class ="bucksgear">MIL CHAMPIONSHIP FEATURE GEAR</h2>
-                 <img class="" src="https://cdn.shopify.com/s/files/1/2400/0999/files/BPS_EvergreenShirts_Set3_Website_FeatureBanner-Desktop_1650x583_0627cc11-06a5-4baf-8705-e9bc60aad618.jpg?v=1628601933"/>
-               
+                 <h2 class="bucksgear"></h2>
+                 <img class="milly" src="https://cdn.shopify.com/s/files/1/2400/0999/files/BPS_EvergreenShirts_Set3_Website_FeatureBanner-Desktop_1650x583_0627cc11-06a5-4baf-8705-e9bc60aad618.jpg?v=1628601933"/>
             </div>
         </section>
         <!-- Create a slide bar w/ photos of Main shopping  -->
-        <section class="shopNow">
+        <section class="containerOne">
+
             <div class="shopNowCard">
-                <button class="jerseyByBtn">select</button>
+                <a href="https://store.nba.com/top-selling-jerseys/x-145027+z-93281429-1493771407">
                 <img class="jerseyBy" src="https://lakersdaily.com/wp-content/uploads/2021/07/E7kexAWXEAkwfLh-e1627678271832.jpeg">
                 <h2>Buy a Jersey</h2>
+                </a>
             </div>
 
             <div class="shopNowCard">
-                <button class="shirtByBtn">select</button>
+                <a href="https://www.homage.com/collections/nba">
                 <img class="shirtBy" src="https://i8.amplience.net/i/jpl/jd_447254_b?qlt=92&w=600&h=765&v=1">
                 <h2>SHIRTS</h2>
+                </a>
             </div>
 
             <div class="shopNowCard">
-                <button class="hatByBtn">select</button>
+                <a href="https://www.mitchellandness.com/headwear/league-hats/nba-hats">
                 <img class="hatBy" src="https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_3816000/altimages/ff_3816272-0bebd5d0450b7d40c3e2alt1_full.jpg&w=900">
                 <h2>HATS</h2>
+                </a>
             </div>
 
             <div class="shopNowCard">
-                <button class="collectByBtn">select</button>
+                <a href="https://www.paniniamerica.net/cards/trading-cards/basketball.html">
                 <img class="collectBy" src="https://m.media-amazon.com/images/I/A13culcOypL._AC_SL1500_.jpg">
                 <h2>COLLECTIBLES</h2>
+                </a>
             </div>
         </section>
         <!-- This section should enable you to choose a star player's gear (slide bar as well) -->
@@ -87,38 +103,103 @@
             <p id="shopByPlayer">SHOP BY PLAYER</p>
             
             <div class="players-gear">
-                <img  id="donImg" class="byPlayer" src="https://64.media.tumblr.com/070c9973706a065cb58ca93ec3979aeb/tumblr_p3y3rbqIQW1u2klrwo1_400.gifv" >
-                <button class="playerName">Donovan Mitchell</button>
+                <a  href="https://myway45.com/">
+                <img  id="donImg"  class="byPlayer" src="https://64.media.tumblr.com/070c9973706a065cb58ca93ec3979aeb/tumblr_p3y3rbqIQW1u2klrwo1_400.gifv" >
+                <button id="donBtn" class="playerName">Donovan Mitchell</button>
+                </a>
             </div>
 
             <div class="players-gear">
+                <a  href="https://www.lebronjames.com/">
                 <img  id="bronImg" class="byPlayer" src="https://c.tenor.com/6I85un7McVcAAAAM/lebron-james-lebron.gif" >
-                <button class="playerName">Lebron James</button>
+                <button id="bronBtn" href="" class="playerName">Lebron James</button>
+                </a>
             </div>
 
             <div class="players-gear">
+                <a  href="https://store.nba.com/stephen-curry/a-63761149+z-79355-2901775567">
                 <img  id="stephImg" class="byPlayer" src="https://www.nba.com/resources/static/team/v2/warriors/images/currygame1treys_falling.gif" >
-                <button class="playerName">Stephen Curry</button>
-            </div>
+                <button id="stephBtn" class="playerName">Stephen Curry</button>
+              </a>
 
             <div class="players-gear">
+                <a href="https://www.nike.com/basketball/kevin-durant">
                 <img  id="kdImg" class="byPlayer" src="https://i.pinimg.com/originals/49/1d/51/491d51c0a60fcdfefa4ed73a9a4d5c23.gif" >
-                <button class="playerName">Kevin Durant</button>
+                <button id="kdBtn"class="playerName">Kevin Durant</button>
+                </a>
             </div>
 
             <div class="players-gear">
+                <a href="https://www.giannis34.com/">
                 <img  id="giannisImg" class="byPlayer" src="https://media0.giphy.com/media/KbGWXmC39RdsXCHDsk/200w.gif?cid=82a1493bbwimrcvd9l5pk5b64nw25kwbmrbnhtk4z1lfar8a&rid=200w.gif&ct=g" >
-                <button class="playerName">Giannis Antetokounmpo</button>
+                <button id="giannisBtn"class="playerName">Giannis Antetokounmpo</button>
+                </a>
             </div>
 
             <div class="players-gear">
+                <a href="http://www.shaq.com/">
                 <img  id="shaqImg" class="byPlayer" src="https://64.media.tumblr.com/65ba159befb44798f716a970b34b5f75/ed7386e8f4869320-28/s400x600/21227eecd8aaa7a19d864748691e1ca02c9377f0.gifv" >
-                <button class="playerName">Shaquille O'Neal</button>
+                <button id="dieselBtn"class="playerName">Shaquille O'Neal</button>
+                </a>
             </div>
         </section>
-    </main>
-    <footer>
-
-    </footer>
+       
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="main.js" ></script>
+        <script src="popup.js"></script>
+        <script>
+            document.getElementById("donBtn").onclick = function () {
+                axios.get("http://localhost:4044/api/donBtn")
+                    .then(function (response) {
+                      let data = response.data;
+                      alert(data);
+                    });
+                }   
+            document.getElementById("bronBtn").onclick = function () {
+                axios.get("http://localhost:4044/api/bronBtn")
+                    .then(function (response) {
+                      let data = response.data;
+                      alert(data);
+                    });
+                }
+            document.getElementById("stephBtn").onclick = function () {
+                axios.get("http://localhost:4044/api/stephBtn")
+                    .then(function (response) {
+                      let data = response.data;
+                      alert(data);
+                    });
+                }
+            document.getElementById("kdBtn").onclick = function () {
+                axios.get("http://localhost:4044/api/kdBtn")
+                    .then(function (response) {
+                      let data = response.data;
+                      alert(data);
+                    });
+                }
+            document.getElementById("giannisBtn").onclick = function () {
+                axios.get("http://localhost:4044/api/giannisBtn")
+                    .then(function (response) {
+                      let data = response.data;
+                      alert(data);
+                    });
+                }
+            document.getElementById("dieselBtn").onclick = function () {
+                axios.get("http://localhost:4044/api/dieselBtn")
+                    .then(function (response) {
+                      let data = response.data;
+                      alert(data);
+                    });
+                }
+        </script>
+    </main> 
 </body>
+<footer>
+    <p>&#169 Basketball Works</p>
+    <section class="email-sign-up">
+    <p> Sign Up and get free shipping on your first order</p>
+      <input type="text"
+             placeholder="email-here"/>
+      <button id="sign-up">Sign Up</button>
+      </section>
+    </footer>
 </html>
