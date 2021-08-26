@@ -9,7 +9,7 @@ const giannisBtn = document.getElementById('giannisBtn')
 const dieselBtn = document.getElementById('dieselBtn')
 const signUpForm = document.querySelector(".email-sign-up");
 const emailInput = document.querySelector("input");
-const signUpbtn = document.querySelector("#sign-up");
+const signUpBtn = document.querySelector("#sign-up");
 const footer = document.querySelector("footer");
 
 document.getElementById('shopcart-count')
@@ -167,15 +167,18 @@ function playersProfile(player) {
 }
 
 function emailSubmitHandler() {
-    const confirmationMsg = document.createElement("p");
+    let confirmationMsg = document.createElement("p");
     confirmationMsg.textContent = "Verify e-mail to receive free shipping on your first order." + emailInput.value; 
     signUpForm.remove();
     
     footer.appendChild(confirmationMsg);
 }
-    signUpbtn.addEventListener('click', () => {
-        emailSubmitHandler()
-    })
+// signUpBtn.addEventListener('click', () => {
+//     emailSubmitHandler()
+// })
+    //  signUpBtn.addEventListener('click', () => {
+    //     emailSubmitHandler()
+    // })
 
 bronBtn.addEventListener('click', () => {
     playersProfile(237)
@@ -195,7 +198,7 @@ giannisBtn.addEventListener('click', () => {
 dieselBtn.addEventListener('click', () => {
     playersProfile(735)
 })
-signUpbtn.addEventListener('click', () => {
-    emailSubmitHandler()
-})
+// signUpbtn.addEventListener('click', () => {
+//     emailSubmitHandler()
+// })
 // setTimeout(donBtn(alert), 5000000 );

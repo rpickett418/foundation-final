@@ -146,7 +146,6 @@
        
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="main.js" ></script>
-        <script src="popup.js"></script>
         <script>
             document.getElementById("donBtn").onclick = function () {
                 axios.get("http://localhost:4044/api/donBtn")
@@ -192,14 +191,14 @@
                 }
         </script>
     </main> 
+    <footer>
+        <p>&#169 Basketball Works</p>
+        <section class="email-sign-up">
+        <p> Sign Up and get free shipping on your first order</p>
+          <input type="text"
+                 placeholder="email-here"/>
+          <button id="sign-up">Sign Up</button>
+          </section>
+        </footer>
 </body>
-<footer>
-    <p>&#169 Basketball Works</p>
-    <section class="email-sign-up">
-    <p> Sign Up and get free shipping on your first order</p>
-      <input type="text"
-             placeholder="email-here"/>
-      <button id="sign-up">Sign Up</button>
-      </section>
-    </footer>
 </html>
