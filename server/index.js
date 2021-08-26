@@ -65,5 +65,5 @@ app.get("/api/dieselBtn", (req,res) => {
     res.status(200).send(mayorMcShaq)
 });
 
-
-app.listen(4044, () => console.log("Hurry Up"));
+const serverPort = process.env.PORT || 4044
+app.listen(serverPort, () => console.log("Hurry Up"));
